@@ -1,0 +1,24 @@
+{
+  "name": "shahyogmap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm  run server\" \"npm run client\"",
+    "start": "nodemon server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ArpitChaurasia",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "create-react-app": "^2.1.2",
+    "express": "^4.16.4",
+    "pg": "^7.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
